@@ -157,6 +157,16 @@ footer{background:var(--ch);padding:36px clamp(24px,6vw,100px);display:flex;alig
 .closing-line{font-family:'Cormorant Garamond',serif;font-size:clamp(24px,3.5vw,38px);color:#fff;line-height:1.4;margin-bottom:20px;}
 .closing-final{font-family:'Cormorant Garamond',serif;font-style:italic;font-size:clamp(28px,4vw,44px);color:var(--gold);margin-top:16px;}
 
+/* Mini-Court Math component, matched from index.html */
+.mc{margin-top:44px;background:rgba(0,0,0,.2);padding:36px;display:grid;grid-template-columns:auto 1fr;gap:36px;align-items:center;border-left:4px solid var(--gold);}
+@media(max-width:700px){.mc{grid-template-columns:1fr;}}
+.mn2{display:flex;align-items:center;gap:16px;flex-wrap:wrap;}
+.mfi .mn{font-family:'Cormorant Garamond',serif;font-size:32px;font-weight:700;color:var(--gold);line-height:1;}
+.mfi .ml{font-family:'Barlow Condensed',sans-serif;font-size:10px;font-weight:600;letter-spacing:2px;color:var(--mu);text-transform:uppercase;margin-top:3px;}
+.ma{font-family:'Cormorant Garamond',serif;font-size:26px;color:var(--gl);opacity:.7;}
+.mtx .mtt{font-family:'Barlow Condensed',sans-serif;font-size:15px;font-weight:700;letter-spacing:1px;color:var(--gold);text-transform:uppercase;margin-bottom:8px;}
+.mtx p{font-size:13px;line-height:1.7;color:rgba(255,255,255,.62);}
+
 </style>
 </head>
 <body class="lang-pl">
@@ -204,6 +214,10 @@ footer{background:var(--ch);padding:36px clamp(24px,6vw,100px);display:flex;alig
   <div class="equip-item"><span class="n">2×</span> <span data-lang="en">Mini-tennis nets (~3m)</span><span data-lang="pl">Siatki do mini tenisa (~3m)</span></div>
   <div class="equip-item"><span class="n">12×</span> <span data-lang="en">Rackets</span><span data-lang="pl">Rakiet</span></div>
   <div class="equip-item"><span class="n">60×</span> <span data-lang="en">Red balls</span><span data-lang="pl">Czerwonych piłek</span></div>
+  <div class="equip-item"><span class="n">60×</span> <span data-lang="en">Green balls</span><span data-lang="pl">Zielonych piłek</span></div>
+  <div class="equip-item"><span class="n">2×</span> <span data-lang="en">Feeding baskets</span><span data-lang="pl">Koszy do podawania piłek</span></div>
+  <div class="equip-item"><span class="n">2×</span> <span data-lang="en">Speed ladders</span><span data-lang="pl">Drabinek koordynacyjnych</span></div>
+  <div class="equip-item"><span class="n">50×</span> <span data-lang="en">Cones</span><span data-lang="pl">Pachołków</span></div>
 </div>
 
 <div class="pull-quote" data-lang="en"><p>We are not sitting in an office designing a theoretical sports programme. We are beginning to operate it.</p></div>
@@ -281,11 +295,19 @@ footer{background:var(--ch);padding:36px clamp(24px,6vw,100px);display:flex;alig
 <p data-lang="en">Better players create better economics. As competence increases, players can operate more autonomously, group sizes can increase, coach time is used more efficiently, atmosphere improves, and cost per participant can potentially fall.</p>
 <p data-lang="pl">Lepsi zawodnicy tworzą lepszą ekonomię. Wraz ze wzrostem kompetencji zawodnicy mogą działać bardziej samodzielnie, grupy mogą się powiększać, czas trenera jest wykorzystywany efektywniej, atmosfera się poprawia, a koszt na uczestnika może potencjalnie spaść.</p>
 
-<div class="flow-diagram">
-  <div class="flow-step" data-lang="en">SMALL GROUPS → LARGER GROUPS</div>
-  <div class="flow-step" data-lang="pl">MAŁE GRUPY → WIĘKSZE GRUPY</div>
-  <div class="flow-arrow">↓</div>
-  <div class="flow-step gold">30–40%</div>
+<div class="mc" style="margin-top:32px;">
+  <div class="mn2">
+    <div class="mfi"><div class="mn" data-lang="en">Phase 1</div><div class="mn" data-lang="pl">Faza 1</div><div class="ml" data-lang="en">High-touch · small groups</div><div class="ml" data-lang="pl">Indywidualne podejście · małe grupy</div></div>
+    <div class="ma">→</div>
+    <div class="mfi"><div class="mn" data-lang="en">Phase 2</div><div class="mn" data-lang="pl">Faza 2</div><div class="ml" data-lang="en">Larger groups · lower cost</div><div class="ml" data-lang="pl">Większe grupy · niższy koszt</div></div>
+    <div class="ma" style="color:var(--gold)">30–40%</div>
+  </div>
+  <div class="mtx">
+    <div class="mtt" data-lang="en">The Mini-Court Math</div>
+    <div class="mtt" data-lang="pl">Matematyka Mini Kortów</div>
+    <p data-lang="en">As players develop through the system, the cost per session for families <strong style="color:#fff">reduces by 30–40%</strong> from Phase 1 to Phase 2. The better the players get, the better the economics — for everyone.</p>
+    <p data-lang="pl">Wraz z rozwojem zawodników w systemie, koszt sesji dla rodzin <strong style="color:#fff">spada o 30–40%</strong> z Fazy 1 do Fazy 2. Im lepsi zawodnicy, tym lepsza ekonomia — dla wszystkich.</p>
+  </div>
 </div>
 <p class="tag-label" data-lang="en">This is the current Sparta model/economic objective, not a guaranteed municipal outcome.</p>
 <p class="tag-label" data-lang="pl">To obecny model/cel ekonomiczny Sparty, nie gwarantowany wynik dla miasta.</p>
@@ -417,6 +439,17 @@ footer{background:var(--ch);padding:36px clamp(24px,6vw,100px);display:flex;alig
 <div class="pull-quote" data-lang="en"><p>The building is not the product. The product is the system. The building is the physical headquarters of a system that has already been tested and proven.</p></div>
 <div class="pull-quote" data-lang="pl"><p>Budynek nie jest produktem. Produktem jest system. Budynek jest fizyczną siedzibą systemu, który został już przetestowany i sprawdzony.</p></div>
 
+<h2 class="art-section-head" data-lang="en" style="font-size:24px;margin-top:36px;">Beyond the Court</h2>
+<h2 class="art-section-head" data-lang="pl" style="font-size:24px;margin-top:36px;">Poza Kortem</h2>
+<p data-lang="en">The same building can support reception, a stringing service, a small pro shop, and a coffee/social space where parents wait, talk, and stay. This matters for two separate reasons.</p>
+<p data-lang="pl">Ten sam budynek może pomieścić recepcję, serwis naciągu rakiet, mały sklep sportowy oraz przestrzeń kawiarniano-socjalną, gdzie rodzice czekają, rozmawiają i zostają dłużej. To ma znaczenie z dwóch odrębnych powodów.</p>
+<p data-lang="en"><strong style="color:#fff;">First, economically:</strong> stringing and retail are recurring, ancillary revenue streams beyond court fees — services players already need, delivered on-site rather than sending them elsewhere.</p>
+<p data-lang="pl"><strong style="color:#fff;">Po pierwsze, ekonomicznie:</strong> naciąg rakiet i sprzedaż detaliczna to powtarzalne, dodatkowe źródła przychodu poza opłatami za kort — usługi, których zawodnicy i tak potrzebują, dostarczane na miejscu zamiast gdzie indziej.</p>
+<p data-lang="en"><strong style="color:#fff;">Second, culturally:</strong> a warm, comfortable space for waiting parents is what turns a facility into a genuine community hub rather than a drop-off point. Families who stay, talk, and watch become part of the culture — not just customers passing through it. This directly supports the "culture first" principle the whole system is built on.</p>
+<p data-lang="pl"><strong style="color:#fff;">Po drugie, kulturowo:</strong> ciepła, komfortowa przestrzeń dla czekających rodziców to coś, co zamienia obiekt w prawdziwe centrum społeczności, a nie tylko miejsce odbioru dziecka. Rodziny, które zostają, rozmawiają i oglądają, stają się częścią kultury — nie tylko klientami, którzy przez nią przechodzą. To bezpośrednio wspiera zasadę "najpierw kultura", na której zbudowany jest cały system.</p>
+<p class="tag-label" data-lang="en">Exact secondary-revenue figures are not yet available and are not claimed here — this is a structural argument, not a financial projection.</p>
+<p class="tag-label" data-lang="pl">Dokładne dane dotyczące przychodów dodatkowych nie są jeszcze dostępne i nie są tu podawane — to argument strukturalny, nie prognoza finansowa.</p>
+
 <div class="art-divider" data-lang="en"><span class="art-divider-icon">🎾</span></div>
 <div class="art-divider" data-lang="pl"><span class="art-divider-icon">🎾</span></div>
 
@@ -433,6 +466,7 @@ footer{background:var(--ch);padding:36px clamp(24px,6vw,100px);display:flex;alig
   <div class="ask-item"><span class="mark">—</span><span data-lang="en">School-gym partnerships and introductions</span><span data-lang="pl">Partnerstwa i wprowadzenia do szkolnych sal gimnastycznych</span></div>
   <div class="ask-item"><span class="mark">—</span><span data-lang="en">Help identifying suitable premises</span><span data-lang="pl">Pomoc w znalezieniu odpowiednich lokali</span></div>
   <div class="ask-item"><span class="mark">—</span><span data-lang="en">Support navigating funding opportunities</span><span data-lang="pl">Wsparcie w poruszaniu się po możliwościach finansowania</span></div>
+  <div class="ask-item"><span class="mark">—</span><span data-lang="en">Guidance on Poland's annual <em>Program rozwoju infrastruktury sportowej w województwach</em> (Ministry of Sport and Tourism) — sports associations with legal standing are eligible applicants, not municipalities alone</span><span data-lang="pl">Wsparcie w kwestii corocznego <em>Programu rozwoju infrastruktury sportowej w województwach</em> (Ministerstwo Sportu i Turystyki) — stowarzyszenia sportowe posiadające osobowość prawną również mogą składać wnioski, nie tylko samorządy</span></div>
   <div class="ask-item"><span class="mark">—</span><span data-lang="en">Inclusion in relevant city sport initiatives</span><span data-lang="pl">Włączenie w odpowiednie miejskie inicjatywy sportowe</span></div>
   <div class="ask-item"><span class="mark">—</span><span data-lang="en">Promotional support</span><span data-lang="pl">Wsparcie promocyjne</span></div>
   <div class="ask-item"><span class="mark">—</span><span data-lang="en">Local business and sponsor introductions</span><span data-lang="pl">Wprowadzenie do lokalnych firm i sponsorów</span></div>
